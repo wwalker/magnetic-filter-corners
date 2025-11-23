@@ -3,7 +3,7 @@
 
 include <params-one-piece.scad>
 
-$fn = 100;
+$fn = 50;
 
 union()
 {
