@@ -4,6 +4,8 @@
 use <mods-case.scad>
 include <params.scad>
 
+$fn = 36;
+
 // === MAIN MODEL ===
 difference() {
   union() {
@@ -12,11 +14,11 @@ difference() {
 
     //case main wall
     translate([0, 0, base_th]) {
-      wall(base_w, base_d, base_h, wall_th);
+      wall(base_w, base_d, wall_h, wall_th);
     }
 
     // case mating lip
-    translate([lip_inset, lip_inset, base_th + base_h]) {
+    translate([lip_inset, lip_inset, base_th + wall_h]) {
       wall(lip_w, lip_d, lip_h, lip_th);
     }
 
@@ -29,7 +31,7 @@ difference() {
     {
       translate([base_w, 0,  -0.1]) {
         rotate([0, 0, 45]) {
-          cube([base_w*2, base_d*2, base_h * 2]);
+          cube([base_w*2, base_d*2, wall_h * 2]);
         }
       }
     }
