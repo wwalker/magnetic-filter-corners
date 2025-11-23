@@ -36,11 +36,11 @@ difference() {
       }
     }
     translate([base_w*0.6, 0,  0]) {
-        cube([base_w*2, base_d*2, wall_h * 2]);
-}
+      cube([base_w*2, base_d*2, wall_h * 2]);
+    }
     translate([0, base_w*0.6, 0]) {
-        cube([base_w*2, base_d*2, wall_h * 2]);
-}
+      cube([base_w*2, base_d*2, wall_h * 2]);
+    }
 
   }
 }
