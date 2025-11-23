@@ -1,7 +1,7 @@
 // === Parameters ===
 base_w  = 60;
 base_d  = 60;
-base_h  = 2;
+base_h  = 10;
 base_th = 2;
 
 wall_w  = base_w;
