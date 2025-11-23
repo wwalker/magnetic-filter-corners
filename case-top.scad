@@ -12,7 +12,7 @@ difference() {
 
     //case main wall
     translate([0, 0, base_th]) {
-      wall(base_w, base_d, base_h, base_th);
+      wall(base_w, base_d, base_h, wall_th);
     }
 
     // case mating lip
@@ -23,6 +23,11 @@ difference() {
     // case inner mating lip
     translate([il_inset, il_inset, base_th + base_h]) {
       wall(il_w, il_d, il_h, il_th);
+    }
+
+    // retaining bump
+    translate([bump_x, bump_y, bump_z]){
+      sphere(bump_radius);
     }
   }
   {

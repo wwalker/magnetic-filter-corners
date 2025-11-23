@@ -1,18 +1,23 @@
 // === Parameters ===
-base_w  = 60;
-base_d  = 60;
+base_w  = 75;
+base_d  = 75;
 base_h  = 10;
 base_th = 2;
 
 wall_w  = base_w;
 wall_d  = base_d;
 wall_h  = 10;
-wall_th = 2;
+wall_th = 3;
 
 top_w  = base_w;
 top_d  = base_d;
 top_h  = 12;
 top_th = 2;
+
+bump_radius = 2;
+bump_x = base_w/2 - bump_radius;
+bump_y = base_d/2 - bump_radius;
+bump_z = base_h/2 - bump_radius;
 
 fwi = wall_d - wall_th;
 nwi = wall_th;
