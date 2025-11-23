@@ -19,6 +19,11 @@ difference() {
     translate([0, 0, base_th + base_h]) {
       wall(base_w, base_d, lip_h, lip_th);
     }
+
+    // case inner mating lip
+    translate([il_inset, il_inset, base_th + base_h]) {
+      wall(il_w, il_d, il_h, il_th);
+    }
   }
   {
     translate([base_w, 0,  0]) {

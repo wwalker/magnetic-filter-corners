@@ -19,8 +19,14 @@ nwi = wall_th;
 lwi = wall_th;
 rwi = wall_w - wall_th;
 
-lip_th    = 1.0;
-lip_inset = wall_th - lip_th;
-lip_w     = wall_w - 2 * lip_inset;
-lip_d     = wall_d - 2 * lip_inset;
-lip_h     = 2;
+il_th    = 1.0;
+il_inset = 2 * il_th;
+il_w     = wall_w - 2 * il_inset;
+il_d     = wall_d - 2 * il_inset;
+il_h     = 2.0;
+
+lip_th    = 0.8;
+lip_inset = il_th + 0.1;
+lip_w     = wall_w - 2 * lip_th;
+lip_d     = wall_d - 2 * lip_th;
+lip_h     = 2.0;
