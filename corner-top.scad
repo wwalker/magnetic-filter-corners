@@ -4,7 +4,7 @@
 use <mods-case.scad>
 include <params.scad>
 
-$fn = 36;
+$fn = 100;
 
 // === MAIN MODEL ===
 difference() {
